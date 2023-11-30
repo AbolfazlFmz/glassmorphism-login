@@ -1,0 +1,75 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #000;
+	overflow: hidden;
+}
+.effect_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	filter: blur(80px);
+}
+.skew {
+	animation: skew 18s linear infinite;
+}
+
+@keyframes skew {
+	0%,
+	50%,
+	100% {
+		transform: skew(0deg);
+	}
+	25% {
+		transform: skew(-36deg);
+	}
+	75% {
+		transform: skew(36deg);
+	}
+}
+.rotate {
+	width: 32vw;
+	height: 55vh;
+	background-image: linear-gradient(to right, #42a5f5 10%, #9575cd 90%);
+	border-radius: 100%;
+	animation: rotate 8s linear infinite;
+}
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+@media screen and (max-width: 950px) {
+	@keyframes skew {
+		0%,
+		50%,
+		100% {
+			transform: skew(0deg);
+		}
+		25% {
+			transform: skew(-26deg);
+		}
+		75% {
+			transform: skew(26deg);
+		}
+	}
+	.rotate {
+		animation: rotate 10s linear infinite;
+	}
+	.skew {
+		animation: skew 20s ease-in infinite;
+	}
+}
+@media screen and (max-width: 650px) {
+	.rotate {
+		width: 50vw;
+		height: 55vh;
+	}
+}
