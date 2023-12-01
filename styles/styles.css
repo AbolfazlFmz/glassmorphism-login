@@ -32,7 +32,7 @@ body {
 	filter: blur(80px);
 }
 .skew {
-	animation: skew 16s linear infinite;
+	animation: skew 12s linear infinite;
 }
 
 @keyframes skew {
@@ -53,7 +53,7 @@ body {
 	height: 55vh;
 	background-image: linear-gradient(to right, #42a5f5 10%, #9575cd 90%);
 	border-radius: 100%;
-	animation: rotate 8s linear infinite;
+	animation: rotate 6s linear infinite;
 }
 @keyframes rotate {
 	from {
