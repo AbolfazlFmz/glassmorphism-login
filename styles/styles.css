@@ -197,7 +197,7 @@ input::placeholder {
 	background-color: rgba(0, 229, 255, 0.6);
 	border-radius: 100%;
 	position: absolute;
-	transition: all 400ms ease;
+	transition: all 250ms ease;
 	z-index: -1;
 	filter: blur(10px);
 }
